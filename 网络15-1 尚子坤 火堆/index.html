@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			.bg{
+				width: 1000px;
+				height:1000px;
+				background-color: black;
+				position: relative;
+				box-shadow: 0px -200px 100px darkslateblue inset;
+			}
+			.wood1{
+				width: 350px;
+				height: 50px;
+				background-color: lightpink;
+				position: absolute;
+				border-radius: 10px;
+				box-shadow: 2px 2px 5px  black;
+				bottom: 100px;
+				left: 300px;
+				transform: rotate(15deg);
+				
+			}
+			.wood2{
+				width: 350px;
+				height: 50px;
+				background-color: lightpink;
+				position: absolute;
+				border-radius: 10px;
+				box-shadow: 2px 2px 5px black;
+				bottom: 100px;
+				left: 300px;
+				transform: rotate(-15deg);
+				
+			}
+			.fire1{
+				width: 45px;
+				height: 45px;
+				background-color: yellow;
+				position: absolute;
+				border-radius: 10px;
+				box-shadow: 2px 2px 5px black;
+				transform: rotate(45deg);
+				bottom: 180px;
+				left: 525px;
+				animation: fire2move 0.5s infinite linear;
+			}
+			.fire2{
+				width: 45px;
+				height: 45px;
+				background-color: yellow;
+				position: absolute;
+				border-radius: 10px;
+				box-shadow: 2px 2px 5px black;
+				transform: rotate(45deg);
+				bottom: 170px;
+				left: 450px;
+				animation: firemove 1s infinite linear;
+			}
+			.fire3{
+				width: 45px;
+				height: 45px;
+				background-color: yellow;
+				position: absolute;
+				border-radius: 10px;
+				box-shadow: 2px 2px 5px black;
+				transform: rotate(45deg);
+				bottom: 170px;
+				left: 450px;
+				animation: firemove 1.5s infinite linear;
+			}
+			.fire4{
+				width: 45px;
+				height: 45px;
+				background-color: yellow;
+				position: absolute;
+				border-radius: 10px;
+				box-shadow: 2px 2px 5px black;
+				transform: rotate(45deg);
+				bottom: 180px;
+				left: 525px;
+				animation: fire2move 1.5s infinite linear;			}
+			@keyframes firemove{
+				0%{
+					width: 45px;
+					height: 45px;
+					background-color: yellow;
+					position: absolute;
+					border-radius: 10px;
+					box-shadow: 2px 2px 5px black;
+					transform: rotate(45deg);
+					bottom: 170px;
+					left: 450px;
+				}
+				15%{
+					width: 50px;
+					height: 50px;
+					background-color: yellow;
+					position: absolute;
+					border-radius: 10px;
+					box-shadow: 2px 2px 5px black;
+					transform: rotate(45deg);
+					bottom: 200px;
+					left: 450px;
+				}
+				30%{
+					width: 75px;
+					height: 75px;
+					background-color: orange;
+					position: absolute;
+					border-radius: 10px;
+					box-shadow: 2px 2px 5px black;
+					transform: rotate(45deg);
+					bottom: 250px;
+					left:475px;
+				}
+				45%{
+					width: 100px;
+					height: 100px;
+					background-color: orangered;
+					position: absolute;
+					border-radius: 10px;
+					box-shadow: 2px 2px 5px black;
+					transform: rotate(45deg);
+					bottom: 300px;
+					left: 500px;
+				}
+				60%{
+					width: 125px;
+					height: 125px;
+					background-color: orange;
+					position: absolute;
+					border-radius: 10px;
+					box-shadow: 2px 2px 5px black;
+					transform: rotate(45deg);
+					opacity: 0.8;
+					bottom: 350px;
+					left: 525px;
+				}
+				75%{
+					width: 150px;
+					height: 150px;
+					background-color: yellow;
+					position: absolute;
+					border-radius: 10px;
+					box-shadow: 2px 2px 5px black;
+					transform: rotate(45deg);
+					bottom: 450px;
+					left: 525px;
+				}
+				100%{
+					width: 200px;
+					height: 200px;
+					background-color: red;
+					position: absolute;
+					border-radius: 10px;
+					box-shadow: 2px 2px 5px black;
+					transform: rotate(45deg);
+					opacity: 0.5;
+					bottom:700px;
+					left: 550px;
+				}
+			}
+			@keyframes fire2move{
+				0%{
+					width: 45px;
+					height: 45px;
+					background-color: yellow;
+					position: absolute;
+					border-radius: 10px;
+					box-shadow: 2px 2px 5px black;
+					transform: rotate(45deg);
+					bottom: 180px;
+					left: 525px;
+				}
+				15%{
+					width: 50px;
+					height: 50px;
+					background-color: yellow;
+					position: absolute;
+					border-radius: 10px;
+					box-shadow: 2px 2px 5px black;
+					transform: rotate(45deg);
+					bottom: 200px;
+					left: 525px;
+				}
+				30%{
+					width: 75px;
+					height: 75px;
+					background-color: orange;
+					position: absolute;
+					border-radius: 10px;
+					box-shadow: 2px 2px 5px black;
+					transform: rotate(45deg);
+					bottom: 250px;
+					left: 500px;
+				}
+				45%{
+					width: 95px;
+					height: 95px;
+					background-color: yellow;
+					position: absolute;
+					border-radius: 10px;
+					box-shadow: 2px 2px 5px black;
+					transform: rotate(45deg);
+					bottom: 300px;
+					left: 500px;
+				}
+				60%{
+					width: 125px;
+					height: 125px;
+					background-color: orangered;
+					position: absolute;
+					border-radius: 10px;
+					box-shadow: 2px 2px 5px black;
+					transform: rotate(45deg);
+					opacity: 0.8;
+					bottom: 350px;
+					left: 475px;
+				}
+				75%{
+					width: 150px;
+					height: 150px;
+					background-color: yellow;
+					position: absolute;
+					border-radius: 10px;
+					box-shadow: 2px 2px 5px black;
+					transform: rotate(45deg);
+					bottom: 450px;
+					left: 475px;
+				}
+				100%{
+					width: 175px;
+					height: 175px;
+					background-color: red;
+					position: absolute;
+					border-radius: 10px;
+					box-shadow: 2px 2px 5px black;
+					transform: rotate(45deg);
+					opacity: 0.5;
+					bottom:700px;
+					left: 450px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="bg">
+			<div class="wood2"></div>
+			<div class="wood1"></div>			
+			<div class="fire1"></div>
+			<div class="fire2"></div>
+			<div class="fire3"></div>
+			<div class="fire4"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title></title>
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.box div{
+				width: 50px;
+				height: 50px;
+				background-color: white;
+				float: left; 
+				border: 1px solid cyan;	
+			}
+			.box2{
+				width: 260px;
+				height: 260px;
+				position: relative;
+				overflow: hidden;
+				margin: 0 auto;	
+				box-shadow: 5px 5px 5px cyan;
+				border: 1px solid black;
+				border-radius: 20px;				
+			}
+			.box{
+				width: 364px;
+				height: 364px;
+				position: absolute;
+				left: -53px;
+				top: -53px;			
+				background-image: url(img/g.jpg);
+				background-size: 100% 100%;				
+			}
+			.div3{
+				width: 100px;
+				height: 30px;
+				position: absolute;
+				left:800px;
+				top:200px;	
+				margin: 0 auto;	
+				text-align:center;
+				background-image: url(img/h.jpg);
+				background-size: 100% 100%;			 
+				border: 1px solid cyan;	
+				border-radius: 10px;
+			}
+			.div3:hover{
+				width: 200px;
+				height: 50px;
+			}
+			.div4{
+				width: 100px;
+				height: 30px;
+				position: absolute;
+				left:800px;
+				top:150px;	
+				margin: 0 auto;	
+				text-align:center;
+				background-image: url(img/h.jpg);
+				background-size: 100% 100%;			
+				background-color: red; 
+				border: 1px solid cyan;
+				border-radius: 10px;	
+			}
+			.div4:hover{
+				width: 200px;
+				height: 50px;
+			}
+			.div5{
+				width: 100px;
+				height: 30px;
+				position: absolute;
+				left:800px;
+				top:250px;	
+				margin: 0 auto;	
+				text-align:center;
+				background-image: url(img/h.jpg);
+				background-size: 100% 100%;			
+				background-color: red; 
+				border: 1px solid cyan;
+				border-radius: 10px;	
+			}
+			.div5:hover{
+				width: 200px;
+				height: 50px;
+			}
+			body{
+				width: 1000px;
+				height: 900px;
+				background-image: url(img/i.jpg);
+				background-size: 100% 100%;
+				
+			}
+		</style>
+		<script type="text/javascript">
+			function div3(){
+						alert("点击方块直到图片完全显示即可！");
+					}
+			function div4(){
+						alert("没有捷径！慢慢试吧！哈哈！");
+				}
+			window.onload=function(){
+				var aDiv = document.getElementsByClassName("div1");
+				var aDiv2 = document.getElementsByClassName("div2");/*中间的25个小div*/
+					
+				
+				//aDiv应该是一个数组
+				for(var i=0;i<aDiv.length;i++)/*0-1-2*/
+				{
+					aDiv[i].index = i;//给循环中的元素添加一个属性，属性值等于i
+					aDiv[i].onclick=function(){
+						var temp = 1; //临时变量
+						if(aDiv[this.index].style.backgroundColor=="transparent"){
+							aDiv[this.index].style.backgroundColor = "white";
+						}
+						else
+						{
+							aDiv[this.index].style.backgroundColor = "transparent";
+						}
+						if(aDiv[this.index-1].style.backgroundColor=="transparent"){
+							aDiv[this.index-1].style.backgroundColor = "white";
+						}
+						else
+						{
+							aDiv[this.index-1].style.backgroundColor = "transparent";
+						}
+						if(aDiv[this.index+1].style.backgroundColor=="transparent"){
+							aDiv[this.index+1].style.backgroundColor = "white";
+						}
+						else
+						{
+							aDiv[this.index+1].style.backgroundColor = "transparent";
+						}
+						if(aDiv[this.index-7].style.backgroundColor=="transparent"){
+							aDiv[this.index-7].style.backgroundColor = "white";
+						}
+						else
+						{
+							aDiv[this.index-7].style.backgroundColor = "transparent";
+						}
+						if(aDiv[this.index+7].style.backgroundColor=="transparent"){
+							aDiv[this.index+7].style.backgroundColor = "white";
+						}
+						else
+						{
+							aDiv[this.index+7].style.backgroundColor = "transparent";
+						}
+						
+						for(var j = 0;j<aDiv2.length;j++)
+						{
+							if(aDiv2[j].style.backgroundColor!="transparent")
+							/*
+							 默认情况下（你没有点击的情况下），相应的div获取不到颜色
+							 所以，在这个地方不能判断一个固定的颜色
+							 * */
+							{
+								temp = 0;
+								break; // 跳出循环
+								//alert("123")
+							}
+						}
+						if(temp==1)
+						{
+							
+							/*延时*/
+							
+							setTimeout(function(){
+								alert("恭喜过关!");
+							},500);
+							/*
+							 单位是毫秒，1000ms = 1s
+							 * */
+							
+						}
+					}
+				}
+				/*
+				 
+				 * */
+				//alert(i)
+			}
+		</script>
+	</head>
+	<body>
+		<h1 align="center">拼图游戏</h1>
+		<div class="box2">
+			<div class="box">
+				<!--隐藏-->
+				<div class="div1"></div>
+				<div class="div1"></div>
+				<div class="div1"></div>
+				<div class="div1"></div>
+				<div class="div1"></div>
+				<div class="div1"></div>
+				<div class="div1"></div>				
+				<div class="div1"></div>			
+				<!--第1排五个-->
+				<div class="div1 div2"></div>
+				<div class="div1 div2"></div>
+				<div class="div1 div2"></div>
+				<div class="div1 div2"></div>
+				<div class="div1 div2"></div>
+				<!--隐藏-->
+				<div class="div1"></div>
+				<div class="div1"></div>
+				<!--第2排五个-->
+				<div class="div1 div2"></div>
+				<div class="div1 div2"></div>
+				<div class="div1 div2"></div>
+				<div class="div1 div2"></div>
+				<div class="div1 div2"></div>
+				<!--隐藏-->
+				<div class="div1"></div>
+				<div class="div1"></div>
+				<!--第3排五个-->
+				<div class="div1 div2"></div>
+				<div class="div1 div2"></div>
+				<div class="div1 div2"></div>
+				<div class="div1 div2"></div>
+				<div class="div1 div2"></div>
+				<!--隐藏-->
+				<div class="div1"></div>
+				<div class="div1"></div>
+				<!--第4排五个-->
+				<div class="div1 div2"></div>
+				<div class="div1 div2"></div>
+				<div class="div1 div2"></div>
+				<div class="div1 div2"></div>
+				<div class="div1 div2"></div>
+				<!--隐藏-->
+				<div class="div1"></div>
+				<div class="div1"></div>
+				<!--第5排五个-->
+				<div class="div1 div2"></div>
+				<div class="div1 div2"></div>
+				<div class="div1 div2"></div>
+				<div class="div1 div2"></div>
+				<div class="div1 div2"></div>
+				<!--隐藏-->
+				<div class="div1"></div>
+				<div class="div1"></div>
+				<div class="div1"></div>
+				<div class="div1"></div>
+				<div class="div1"></div>
+				<div class="div1"></div>
+				<div class="div1"></div>
+				<div class="div1"></div>
+			</div>
+		</div>
+		<div class="div3" onclick="div3()">游戏规则</div>
+		<div class="div4" onclick="div4()">游戏攻略</div>
+		<div class="div5" ><a href="index.html">再来一次</a></div>
+	</body>
+</html>
+<!--1 2 
+124 
+345
+234
+235-->

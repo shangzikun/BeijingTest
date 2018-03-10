@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			div{
+				width: 2000px;
+				height: 2000px;
+				position: relative;
+				background-color: red;	
+			}
+			/*蓝色背景*/
+			.div1{
+				width: 1000px;
+				height: 1000px;
+				position: absolute;
+				background-color: #00EEEE;
+				top: 200px;
+				left: 300px;
+				border-radius: 50%;
+			}
+			/*红脸*/
+			.div2{
+				width: 600px;
+				height: 600px;
+				position: absolute;
+				background-color: red ;
+				top: 200px;
+				left:200px;
+				border-radius: 50%;
+			}
+			/*外耳*/
+			.div3{
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				background-color: red ;
+				top: 160px;
+				left:160px;
+				border-radius: 50%;
+			}
+			.div4{
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				background-color: red ;
+				top: 160px;
+				left:660px;
+				border-radius: 50%;
+			}
+			.div1:hover .div3{
+				width: 225px;
+				height: 225px;
+				position: absolute;
+				background-color: red ;
+				top: 150px;
+				left:150px;
+				border-radius: 50%;
+			}
+			.div1:hover .div4{
+				width: 225px;
+				height: 225px;
+				position: absolute;
+				background-color: red ;
+				top: 150px;
+				left:630px;
+				border-radius: 50%;
+			}
+			/*内耳*/
+			.div5{
+				width: 150px;
+				height: 150px;
+				position: absolute;
+				background-color: blue ;
+				top: 40px;
+				left:40px;
+				border-radius: 50%;
+			}
+			.div6{
+				width: 150px;
+				height: 150px;
+				position: absolute;
+				background-color: blue ;
+				top: 40px;
+				left:30px;
+				border-radius: 50%;
+			}
+			/*眼睛*/
+			.div7{
+				width: 125px;
+				height: 125px;
+				position: absolute;
+				background-color: black ;
+				top: 200px;
+				left:125px;
+				border-radius: 50%;
+			}
+			.div8{
+				width: 125px;
+				height: 125px;
+				position: absolute;
+				background-color: black ;
+				top: 200px;
+				left:350px;
+				border-radius: 50%;
+			}
+			.div1:hover .div7{
+				width: 125px;
+				height: 10px;
+				position: absolute;
+				background-color: black ;
+				top: 255px;
+				left:125px;
+				
+			}
+			/*白眼仁*/
+			.div9{
+				width: 60px;
+				height:60px;
+				background-color: white;
+				position: absolute;
+				top: 55px;
+				left: 55px;
+				border-radius: 50%;
+			}
+			.div10{
+				width: 40px;
+				height:40px;
+				background-color: white;
+				position: absolute;
+				top: 15px;
+				left: 15px;
+				border-radius: 50%;
+			}
+			.div11{
+				width: 60px;
+				height:60px;
+				background-color: white;
+				position: absolute;
+				top:55px;
+				left: 55px;
+				border-radius: 50%;
+			}
+			.div12{
+				width: 40px;
+				height:40px;
+				background-color: white;
+				position: absolute;
+				top: 15px;
+				left: 15px;
+				border-radius: 50%;
+			}
+			.div1:hover .div9{
+				background-color: red;
+			}
+			.div1:hover .div10{
+				background-color: red;
+			}
+			/*嘴*/
+			.div13{
+				width: 125px;
+				height: 125px;
+				position: absolute;
+				background-color: black ;
+				top: 350px;
+				left:235px;
+				border-radius: 50%;
+			}
+			.div14{
+				width: 150px;
+				height: 100px;
+				position: absolute;
+				background-color: red ;
+				top: 350px;
+				left:235px;
+				;
+			}
+			.div1:hover .div14{
+				width: 150px;
+				height: 100px;
+				position: absolute;
+				background-color: red ;
+				top: 350px;
+				left:225px;
+				border-radius: 50%;
+			}
+			/*鼻子*/
+			.div15{
+				width: 50px;
+				height: 50px;
+				position: absolute;
+				background-color: black ;
+				top: 325px;
+				left:275px;
+				border-radius: 50%;
+			}
+			/*胡子*/
+			.div16{
+				width: 70px;
+				height:10px;
+				background-color: black;
+				position: absolute;
+				top: 40px;
+				left:-20px;
+				border-radius: 50%;
+				transform: rotate(150deg);
+			}
+			.div17{
+				width: 70px;
+				height:10px;
+				background-color: black;
+				position: absolute;
+				top: 40px;
+				left:85px;
+				border-radius: 50%;
+				transform: rotate(30deg);
+			}
+			/*眼镜*/
+			.div18{
+				width: 235px;
+				height:235px;	
+				background-color: transparent;							
+				border: 10px solid black;
+				position:absolute;
+				top: 125px;
+				left:10px;
+				border-radius: 50%;
+			}
+			.div19{
+				width: 235px;
+				height:235px;	
+				background-color: transparent;							
+				border: 10px solid black;
+				position:absolute;
+				top: 125px;
+				left:335px;
+				border-radius: 50%;
+			}
+			.div20{
+				width:81px;
+				height:10px;	
+				background-color:black;								
+				position:absolute;
+				top: 260px;
+				left:255px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<div class="div1">
+				<div class="div4">
+					<div class="div6"></div>
+				</div>	
+				<div class="div3">
+					<div class="div5"></div>
+				</div>				
+				<div class="div2">
+					<div class="div7">
+						<div class="div9"></div>
+						<div class="div10"></div>
+					</div>
+					<div class="div8">
+						<div class="div11"></div>
+						<div class="div12"></div>
+					</div>
+					<div class="div13"></div>
+					<div class="div14">
+						<div class="div16"></div>
+						<div class="div17"></div>
+					</div>
+					<div class="div15"></div>
+					<div class="div18"></div>
+					<div class="div19"></div>
+					<div class="div20"></div>
+					
+
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

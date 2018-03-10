@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			div{
+				width: 1500px;
+				height: 1000px;
+				background-color: coral;
+				position: relative;
+			}
+			/*头部*/
+			.div1{
+				width: 800px;
+				height: 600px;
+				background-color: saddlebrown;
+				position: absolute;
+				top: 200px;
+				left: 150px;
+				border-radius: 50%;
+			}
+			/*外耳*/
+			.div2{
+				width: 275px;
+				height: 275px;
+				background-color: saddlebrown;
+				position: absolute;
+				top: 125px;
+				left: 150px;
+				border-radius: 50%;
+				animation: lear 2s infinite linear;
+			}
+			.div3{
+				width: 275px;
+				height: 275px;
+				background-color: saddlebrown;
+				position: absolute;
+				top: 125px;
+				left: 675px;
+				border-radius: 50%;
+				animation: rear 2s infinite linear;
+			}
+			/*内耳*/
+			.div4{
+				width: 200px;
+				height: 200px;
+				background-color: burlywood;
+				position: absolute;
+				top:55px;
+				left: 50px;
+				border-radius: 50%;
+				
+			}
+			.div5{
+				width: 200px;
+				height: 200px;
+				background-color: burlywood;
+				position: absolute;
+				top: 55px;
+				left: 25px;
+				border-radius: 50%;
+				
+			}
+			/*眼睛*/
+			.div6{
+				width:70px;
+				height: 70px;
+				background-color: black;
+				position: absolute;
+				top: 200px;
+				left: 200px;
+				border-radius: 50%;
+				animation: leye 0.8s infinite linear;
+			}
+			.div7{
+				width:70px;
+				height: 70px;
+				background-color: black;
+				position: absolute;
+				top: 200px;
+				left: 525px;
+				border-radius: 50%;
+				animation: reye 0.8s infinite linear;
+			}
+			/*嘴*/
+			.div8{
+				width:225px;
+				height: 175px;
+				background-color:white;
+				position: absolute;
+				top: 300px;
+				left: 280px;
+				border-radius: 50%;
+			}
+			/*鼻子*/
+			.div9{
+				width:70px;
+				height: 60px;
+				background-color:black;
+				position: absolute;
+				top: 20px;
+				left: 75px;
+				border-radius: 50%;
+			}
+			/*胡子*/
+			.div10{
+				width:70px;
+				height: 20px;
+				background-color:black;
+				position: absolute;
+				transform: rotate(45deg);
+				top: 80px;
+				left: 100px;
+				border-radius: 50%;
+				animation: rbeer 2s infinite linear;
+			}
+			.div11{
+				width:70px;
+				height: 20px;
+				background-color:black;
+				position: absolute;
+				transform: rotate(135deg);
+				top: 80px;
+				left: 50px;
+				border-radius: 50%;
+				animation: lbeer 2s infinite linear;
+			}
+			@keyframes lear{
+				0%{
+					left: 150px;
+					top: 125px;
+				}
+				10%{
+					left: 130px;
+					top: 145px;
+				}
+				20%{
+					left: 150px;
+					top: 125px;
+				}
+				30%{
+					left: 130px;
+					top: 145px;
+				}
+				40%{
+					left: 150px;
+					top: 125px;
+				}
+				100%{
+					left:150px;
+					top: 125px;
+				}
+			}
+			@keyframes rear{
+				0%{
+					left: 675px;
+					top: 125px;
+				}
+				10%{
+					left: 695px;
+					top: 145px;
+				}
+				20%{
+					left: 675px;
+					top: 125px;
+				}
+				30%{
+					left: 695px;
+					top: 145px;
+				}
+				40%{
+					left: 675px;
+					top: 125px;
+				}
+				100%{
+					left: 675px;
+					top: 125px;
+				}
+			}
+			@keyframes lbeer{
+				0%{
+					transform: rotate(135deg);
+				}
+				10%{
+					transform: rotate(165deg);
+				}
+				20%{
+					transform: rotate(135deg);
+				}
+				30%{
+					transform: rotate(165deg);
+				}
+				40%{
+					transform: rotate(135deg);
+				}
+				100%{
+					transform: rotate(135deg);
+				}
+			}
+			@keyframes rbeer{
+				0%{
+					transform: rotate(45deg);
+				}
+				10%{
+					transform: rotate(15deg);
+				}
+				20%{
+					transform: rotate(45deg);
+				}
+				30%{
+					transform: rotate(15deg);
+				}
+				40%{
+					transform: rotate(40deg);
+				}
+				100%{
+					transform: rotate(45deg);
+				}
+			}
+			@keyframes leye{
+				0%{
+					width:70px;
+					height: 70px;
+					background-color: black;
+					position: absolute;
+					top: 200px;
+					left: 200px;
+					border-radius: 50%;
+				}
+				10%{
+					width:70px;
+					height: 10px;
+					background-color: black;
+					position: absolute;
+					top: 235px;
+					left: 200px;
+				}
+				20%{
+					width:70px;
+					height: 70px;
+					background-color: black;
+					position: absolute;
+					top: 200px;
+					left: 200px;
+					border-radius: 50%;
+				}
+				30%{
+					width:70px;
+					height: 10px;
+					background-color: black;
+					position: absolute;
+					top: 235px;
+					left: 200px;
+				}
+				40%{
+					width:70px;
+					height: 70px;
+					background-color: black;
+					position: absolute;
+					top: 200px;
+					left: 200px;
+					border-radius: 50%;
+				}
+				100%{
+					width:70px;
+					height: 70px;
+					background-color: black;
+					position: absolute;
+					top: 200px;
+					left: 200px;
+					border-radius: 50%;
+				}
+			}
+			@keyframes reye{
+				0%{
+					width:70px;
+					height: 70px;
+					background-color: black;
+					position: absolute;
+					top: 200px;
+					left: 525px;
+					border-radius: 50%;
+				}
+				10%{
+					width:70px;
+					height: 10px;
+					background-color: black;
+					position: absolute;
+					top: 235px;
+					left: 525px;
+				}
+				20%{
+					width:70px;
+					height: 70px;
+					background-color: black;
+					position: absolute;
+					top: 200px;
+					left: 525px;
+					border-radius: 50%;
+				}
+				30%{
+					width:70px;
+					height: 10px;
+					background-color: black;
+					position: absolute;
+					top: 235px;
+					left: 525px;
+				}
+				40%{
+					width:70px;
+					height: 70px;
+					background-color: black;
+					position: absolute;
+					top: 200px;
+					left: 525px;
+					border-radius: 50%;
+				}
+				100%{
+					width:70px;
+					height: 70px;
+					background-color: black;
+					position: absolute;
+					top: 200px;
+					left: 525px;
+					border-radius: 50%;
+				}
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div>
+			<div class="div3">
+				<div class="div5"></div>
+			</div>
+			<div class="div2">
+				<div class="div4"></div>
+			</div>
+			
+			<div class="div1">
+				<div class="div6"></div>
+				<div class="div7"></div>
+				<div class="div8">
+					<div class="div9"></div>
+					<div class="div10"></div>
+					<div class="div11"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

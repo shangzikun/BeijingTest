@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				transform: rotateY(45deg) rotateX(45deg) ;
+				left: 300px;
+				top: 300px;
+				border: 0px solid red;
+				animation: sss 3s infinite linear;
+			}
+			.div11{
+				width: 200px;
+				height: 1px;
+				background-color:black ;
+				top: 66.667px;
+				transform: rotateZ(100px);
+			}
+			.div22{
+				width: 200px;
+				height: 1px;
+				background-color:black ;
+				top: 133.33px;
+				transform: rotateZ(100px);
+			}
+			.div33{
+				width: 1px;
+				height: 200px;
+				background-color:black ;
+				left: 66.66px;
+				transform: rotateZ(100px);
+			}
+			.div44{
+				width: 1px;
+				height: 200px;
+				background-color:black ;
+				left: 133.33px;
+				transform: rotateZ(100px);
+			}
+			.div111{
+				width: 200px;
+				height: 1px;
+				background-color:black ;
+				top: 66.667px;
+				transform: rotateZ(-100px);
+			}
+			.div222{
+				width: 200px;
+				height: 1px;
+				background-color:black ;
+				top: 133.33px;
+				transform: rotateZ(-100px);
+			}
+			.div333{
+				width: 1px;
+				height: 200px;
+				background-color:black ;
+				left: 66.66px;
+				transform: rotateZ(-100px);
+			}
+			.div444{
+				width: 1px;
+				height: 200px;
+				background-color:black ;
+				left: 133.33px;
+				transform: rotateZ(-100px);
+			}
+			/*←*/
+			.div1111{
+				width: 1px;
+				height: 200px;
+				background-color:black ;
+				left: 66.66px;
+				
+			}
+			.div2222{
+				width: 1px;
+				height: 200px;
+				background-color:black ;
+				left: 133.33px;
+			}
+			.div3333{
+				width: 200px;
+				height: 1px;
+				background-color:black ;
+				top: 66.66px;				
+			}
+			.div4444{
+				width: 200px;
+				height: 1px;
+				background-color:black ;
+				top:133.33px;
+			}
+			.div11111{
+				width: 1px;
+				height: 200px;
+				background-color:black ;
+				left: 66.66px;
+				
+			}
+			.div22222{
+				width: 1px;
+				height: 200px;
+				background-color:black ;
+				left: 133.33px;
+			}
+			.div33333{
+				width: 200px;
+				height: 1px;
+				background-color:black ;
+				top: 66.66px;				
+			}
+			.div44444{
+				width: 200px;
+				height: 1px;
+				background-color:black ;
+				top:133.33px;
+			}
+			.diva{
+				width: 200px;
+				height: 1px;
+				background-color:black ;
+				top: 66.667px;
+				transform: rotateZ(100px);
+			}
+			.divb{
+				width: 200px;
+				height: 1px;
+				background-color:black ;
+				top: 133.33px;
+				transform: rotateZ(100px);
+			}
+			.divc{
+				width: 1px;
+				height: 200px;
+				background-color:black ;
+				left: 66.66px;
+				transform: rotateZ(100px);
+			}
+			.divd{
+				width: 1px;
+				height: 200px;
+				background-color:black ;
+				left: 133.33px;
+				transform: rotateZ(100px);
+			}
+			.divaa{
+				width: 200px;
+				height: 1px;
+				background-color:black ;
+				top: 66.667px;
+				transform: rotateZ(100px);
+			}
+			.divbb{
+				width: 200px;
+				height: 1px;
+				background-color:black ;
+				top: 133.33px;
+				transform: rotateZ(100px);
+			}
+			.divcc{
+				width: 1px;
+				height: 200px;
+				background-color:black ;
+				left: 66.66px;
+				transform: rotateZ(100px);
+			}
+			.divdd{
+				width: 1px;
+				height: 200px;
+				background-color:black ;
+				left: 133.33px;
+				transform: rotateZ(100px);
+			}
+			@keyframes sss{
+				from{
+					transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+				}
+				to{
+					transform: rotateY(360deg) rotateX(360deg) rotateZ(360deg);
+				}
+			}
+			div{
+				width: 200px;
+				height: 200px;
+				/*background-color: red;*/
+				border: 1px solid black;
+				position: absolute;
+				transform-style: preserve-3d;
+				border-radius: 50%;
+				left: 0;
+				top: 0;			
+			}
+			.div1{
+				transform: translateZ(100px);
+				background-color: red;
+				
+			}
+			.div2{
+				transform: rotateY(90deg) translateZ(100px);
+				background-color: yellow;
+			}
+			.div3{
+				transform: rotateY(180deg) translateZ(100px);
+				background-color: orangered;
+			}
+			.div4{
+				transform: rotateY(270deg) translateZ(100px);
+				background-color: blue;
+			}
+			.div5{
+				transform: rotateX(90deg) translateZ(100px);
+				background-color: green;
+			}
+			.div6{
+				transform: rotateX(-90deg) translateZ(100px);
+				background-color: white;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="div1">
+				<div class="div11"></div>
+				<div class="div22"></div>
+				<div class="div33"></div>
+				<div class="div44"></div>
+			</div><!--前-->
+			<div class="div2">
+				<div class="div11111"></div>
+				<div class="div22222"></div>
+				<div class="div33333"></div>
+				<div class="div44444"></div>
+			</div><!--→-->
+			<div class="div3">
+				<div class="div111"></div>
+				<div class="div222"></div>
+				<div class="div333"></div>
+				<div class="div444"></div>
+			</div><!--后-->
+			<div class="div4">
+				<div class="div1111"></div>
+				<div class="div2222"></div>
+				<div class="div3333"></div>
+				<div class="div4444"></div>
+			</div><!--←-->
+			<div class="div5">
+				<div class="diva"></div>
+				<div class="divb"></div>
+				<div class="divc"></div>
+				<div class="divd"></div>
+			</div><!--↑-->
+			<div class="div6">
+				<div class="divaa"></div>
+				<div class="divbb"></div>
+				<div class="divcc"></div>
+				<div class="divdd"></div>
+			</div><!--下-->
+		</div>
+	</body>
+</html>
